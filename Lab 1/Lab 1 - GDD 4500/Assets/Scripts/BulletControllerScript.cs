@@ -6,6 +6,13 @@ public class BulletControllerScript : MonoBehaviour
     public float speed = 10f;
     public float lifeTime = 2f;
 
+    private Renderer rend;
+
+    void Awake()
+    {
+        rend = GetComponentInChildren<Renderer>();
+    }
+
     void Start()
     {
         Destroy(gameObject, lifeTime);
@@ -23,6 +30,19 @@ public class BulletControllerScript : MonoBehaviour
             // Tell GameManager crown changes
             GameManager.Instance.TransferCrown(other.gameObject);
             Destroy(gameObject);
+        }
+
+        if (other.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void SetColor(Color color)
+    {
+        if (rend != null)
+        {
+            rend.material.color = color;
         }
     }
 }

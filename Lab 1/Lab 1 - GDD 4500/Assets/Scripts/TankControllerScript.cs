@@ -61,7 +61,12 @@ public class TankControllerScript : MonoBehaviour
     {
         if (bulletPrefab && firePoint && cooldown == false)
         {
-            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
+            // Set bullet color to match tank
+            Color tankColor = GetComponentInChildren<Renderer>().material.color;
+            bullet.GetComponent<BulletControllerScript>().SetColor(tankColor);
+
             cooldown = true;
         }
     }
