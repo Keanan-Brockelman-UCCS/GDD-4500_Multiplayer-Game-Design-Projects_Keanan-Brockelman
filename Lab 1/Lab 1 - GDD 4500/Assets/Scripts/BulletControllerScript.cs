@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.Rendering.DebugUI.Table;
 
+/// <summary>
+/// A script to control bullet behavior
+/// </summary>
 public class BulletControllerScript : MonoBehaviour
 {
-    public float speed = 10f;
-    public float lifeTime = 2f;
+    private float speed = 10f;
+    private float lifeTime = 2f;
 
     private Renderer rend;
 
@@ -27,9 +31,8 @@ public class BulletControllerScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Tell GameManager crown changes
-            GameManager.Instance.TransferCrown(other.gameObject);
-            Destroy(gameObject);
+            TankControllerScript tank = other.GetComponent<TankControllerScript>();
+            tank.DieAndRespawn();
         }
 
         if (other.CompareTag("Wall"))

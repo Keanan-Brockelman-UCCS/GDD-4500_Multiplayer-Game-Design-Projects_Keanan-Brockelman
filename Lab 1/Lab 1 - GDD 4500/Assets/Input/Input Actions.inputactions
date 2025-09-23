@@ -150,7 +150,7 @@
                 {
                     "name": "",
                     "id": "3b02a4bd-c96f-4593-8f51-b7ddc3f1a6b1",
-                    "path": "<Keyboard>/leftShift",
+                    "path": "<Keyboard>/space",
                     "interactions": "Press",
                     "processors": "",
                     "groups": ";Keyboard Left",
