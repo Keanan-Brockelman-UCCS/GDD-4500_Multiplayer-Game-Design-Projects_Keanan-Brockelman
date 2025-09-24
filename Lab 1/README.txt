@@ -23,11 +23,12 @@ Game Build
 - Located in the same folder as this, TankTheCrown.zip
 
 Repo Link
-- https://github.com/Keanan-Brockelman-UCCS/GDD-4500_Multiplayer-Game-Design-Projects_Keanan-Brockelman
+- All of the files are on the repo:
+ - https://github.com/Keanan-Brockelman-UCCS/GDD-4500_Multiplayer-Game-Design-Projects_Keanan-Brockelman
 
 Quick screenshare of gameplay
 - Is uploaded on my drive:
- - 
+ - https://drive.google.com/file/d/1gC33dBWPZXVZFTVUjh9wuDzRMY_R9VX5/view?usp=sharing
 
 Notes:
 - I would have wanted more maps
