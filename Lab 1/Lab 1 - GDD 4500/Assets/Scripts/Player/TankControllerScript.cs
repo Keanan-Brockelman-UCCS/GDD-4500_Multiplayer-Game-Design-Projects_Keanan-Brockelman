@@ -77,6 +77,25 @@ public class TankControllerScript : MonoBehaviour
         // Rotation (X axis of input)
         float rotate = moveInput.x * rotationSpeed * Time.deltaTime;
         transform.Rotate(Vector3.up * rotate);
+
+
+        //Ensure the crown time resets when returning to main menu from arena
+        Scene currentScene = SceneManager.GetActiveScene();
+        bool resetComplete = false;
+
+        if (currentScene.name == "ArenaScene" && resetComplete == false)
+        {
+            if (crownTime > 0f)
+            {
+                crownTime = 0;
+                resetComplete = true;
+            }
+        }
+
+        if (currentScene.name == "MainMenu" && resetComplete == true)
+        {
+            resetComplete = false;
+        }
     }
 
     /// <summary>
