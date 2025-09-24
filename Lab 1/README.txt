@@ -16,7 +16,7 @@ Known Issues
 - The 2nd player is hidden in the arena scene.
 - There is no exit menu, you have to alt+f4 to leave.
 Shoutouts
-- Thank you chatGPT for being my rubber ducky/researcher who can give me streamlined answers that I can dig farther into. Minimal to no code was copied and if it was, it was to debug a line of code that I forgot to remove or some comments when I failed to find the words.
+- Thank you chatGPT for being my rubber ducky/researcher who can give me streamlined answers that I can dig farther into. Minimal to no code was copied from AI and if it was, it was to debug a line of code that I forgot to remove or some comments when I failed to find the words.
 - Kenney's assets are the best, could not have made the tutorial things without them.
 
 Game Build
@@ -26,7 +26,8 @@ Repo Link
 - https://github.com/Keanan-Brockelman-UCCS/GDD-4500_Multiplayer-Game-Design-Projects_Keanan-Brockelman
 
 Quick screenshare of gameplay
-- Is the video file in this folder.
+- Is uploaded on my drive:
+ - 
 
 Notes:
 - I would have wanted more maps
