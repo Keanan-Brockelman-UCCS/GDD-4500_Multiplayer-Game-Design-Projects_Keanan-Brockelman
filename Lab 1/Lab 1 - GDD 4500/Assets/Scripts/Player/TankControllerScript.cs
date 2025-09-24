@@ -12,8 +12,9 @@ public class TankControllerScript : MonoBehaviour
     [SerializeField] Transform firePoint;
 
     // Movement parameters
-    public float moveSpeed = 15f;
-    public float rotationSpeed = 200f;
+    private float moveSpeed = 15f;
+    public float moveMultiplier = 0.5f; // Can be adjusted for speed boosts or slowdowns
+    private float rotationSpeed = 200f;
 
     // Movement input
     private Vector2 moveInput;
@@ -71,7 +72,7 @@ public class TankControllerScript : MonoBehaviour
     {
         // Forward/back movement (Y axis of input)
         float move = moveInput.y * moveSpeed * Time.deltaTime;
-        transform.Translate(Vector3.forward * move);
+        transform.Translate(Vector3.forward * move * moveMultiplier);
 
         // Rotation (X axis of input)
         float rotate = moveInput.x * rotationSpeed * Time.deltaTime;
