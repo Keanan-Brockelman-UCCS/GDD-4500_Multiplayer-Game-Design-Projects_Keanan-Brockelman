@@ -12,6 +12,9 @@ Known Issues
 - It can technically support more than 4 players, but it would break the UI and coloring for the tanks.
 - As a single player, you are more memorizing maps than actually playing, its very boring.
 - The tanks can get flipped over and have no way but another player to flip back up. Doesn't mean you game is over though... just mostly...
+- I dislike collisions and UI. I believe I fixed all the UI stuff, but some of the collisions are awful to non existant.
+- The 2nd player is hidden in the arena scene.
+- There is no exit menu, you have to alt+f4 to leave.
 Shoutouts
 - Thank you chatGPT for being my rubber ducky/researcher who can give me streamlined answers that I can dig farther into. Minimal to no code was copied and if it was, it was to debug a line of code that I forgot to remove or some comments when I failed to find the words.
 - Kenney's assets are the best, could not have made the tutorial things without them.
@@ -19,9 +22,13 @@ Shoutouts
 Game Build
 - Located in the same folder as this, TankTheCrown.zip
 
-
 Repo Link
 - https://github.com/Keanan-Brockelman-UCCS/GDD-4500_Multiplayer-Game-Design-Projects_Keanan-Brockelman
 
 Quick screenshare of gameplay
 - Is the video file in this folder.
+
+Notes:
+- I would have wanted more maps
+- I would have wanted a kill switch for the tanks.
+- I wanted to not have collision or UI issues :(
