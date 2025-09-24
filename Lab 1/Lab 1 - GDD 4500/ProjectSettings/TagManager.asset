@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - Wall
+  - WinnerText
+  - DestructableWall
   layers:
   - Default
   - TransparentFX

@@ -53,9 +53,7 @@ public class StartPadScript : MonoBehaviour
         // Checks if all players are on the pad by comparing counts of the players in the game and those on the pad
         if (playersOnPad.Count == GameManager.Instance.Players.Count)
         {
-            Debug.Log("All players on pad! Starting game...");
-
-            //TODO: Add the arena scene and maybe a UI transition here
+            //TODO: If you expand, add a countdown or multiple arneas or a UI transition here
 
             SceneManager.LoadScene("ArenaScene");
         }
